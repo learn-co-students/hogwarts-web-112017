@@ -11,4 +11,4 @@ const hogList = (props) => {
 
 
 
-export default 
+export default hogList

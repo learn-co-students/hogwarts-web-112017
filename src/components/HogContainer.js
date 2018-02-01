@@ -1,5 +1,6 @@
 import React from 'react'
 import Hogs from '../porkers_data'
+import HogList from './HogList'
 
 class HogContainer extends React.Component {
   constructor(props) {
@@ -11,7 +12,9 @@ class HogContainer extends React.Component {
 
   render () {
     return (
-      <div>hi there hog container here</div>
+      <div>
+        <HogList hogs={this.state.hogs}/>
+      </div>
     )
   }
 }
