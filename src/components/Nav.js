@@ -10,7 +10,7 @@ const Nav = (props) => {
         <img src={piggy} className="App-logo" alt="piggy" />
       </div>
       <span className="normalText">A React App for County Fair Hog Fans</span>
-      <HogFilter greasedFunction={props.greasedFunction}/>
+      <HogFilter greasedFunction={props.greasedFunction} sortFunction={props.sortFunction}/>
     </div>
   )
 }

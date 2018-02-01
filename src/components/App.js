@@ -8,7 +8,7 @@ class App extends Component {
     super(props)
     this.state = {
       greased: false,
-      sorted: 'name'
+      sorted: 'none'
     }
   }
 
@@ -21,13 +21,16 @@ class App extends Component {
     }
   }
 
+  sortFunction = (sorter) => {
+    this.setState({sorted: sorter})
+  }
+
 
   render() {
-    console.log(this.state.greased)
     return (
       <div className="App">
-          < Nav greasedFunction={this.handleGreased}/>
-        < HogContainer greased={this.state.greased}/>
+          < Nav greasedFunction={this.handleGreased} sortFunction={this.sortFunction}/>
+        < HogContainer greased={this.state.greased} sorted={this.state.sorted}/>
       </div>
     )
   }
