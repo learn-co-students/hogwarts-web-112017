@@ -14,8 +14,7 @@ class HogContainer extends React.Component {
   render () {
     return (
       <div>
-        <HogList hogs={this.state.hogs}/>
-        <HogFilter />
+        <HogList hogs={this.state.hogs} greased={this.props.greased}/>
       </div>
     )
   }
