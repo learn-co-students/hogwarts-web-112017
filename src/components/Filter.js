@@ -3,11 +3,6 @@ import hogs from '../porkers_data'
 
 class Filter extends React.Component {
 
-
-  handleGreasedFilter = () => {
-
-  }
-
   handleSort = (event) => {
     console.log(this.props);
     if (event.target.value === "name") {

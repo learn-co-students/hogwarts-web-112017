@@ -7,12 +7,23 @@ export default class PigCard extends React.Component {
 
   render() {
     return(
-      <li onClick={this.toggleState}>
-        <img src={this.handleImage()}></img>
-        <h1>{this.props.pig.name}</h1>
-        {this.displayInfo()}
+      <li className="column" onClick={this.toggleState}>
+        <div className="ui card">
+          <div className="image">
+            <img src={this.handleImage()}></img>
+          </div>
+          <div className="content">
+            <p onClick={this.hidePig}>X</p>
+            <h1>{this.props.pig.name}</h1>
+            {this.displayInfo()}
+          </div>
+        </div>
       </li>
     )
+  }
+
+  hidePig(e) {
+    e.target.parentNode.parentNode.parentNode.style.display = 'none'
   }
 
   handleImage() {

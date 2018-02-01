@@ -9,8 +9,8 @@ const PigsList = (props) => {
   }
 
   return(
-    <div>
-      <ul>{displayPigs()}</ul>
+    <div className="ui four column grid">
+      <ul className="row">{displayPigs()}</ul>
     </div>
   )
 }

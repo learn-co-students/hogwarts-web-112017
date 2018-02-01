@@ -134,6 +134,10 @@ ul {
   clear: both;
 }
 
+.card {
+  margin-bottom: 15px !important;
+}
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
