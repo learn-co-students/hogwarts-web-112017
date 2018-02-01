@@ -39,7 +39,7 @@ class Hog extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="pigTile">
         <img src={ this.findImage() }></img>
         <div>{ this.props.hog.name }</div>
         <div onClick={ this.handleClick }>{ this.generateHTML() }</div>
