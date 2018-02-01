@@ -32,9 +32,8 @@ class Filter extends React.Component {
 
   handleSortByWeight = () => {
     let newPigs = this.props.pigs.slice().sort((currentPig, nextPig) => {
-      return currentPig.weight < nextPig.weight
+      return currentPig['weight as a ratio of hog to LG - 24.7 Cu. Ft. French Door Refrigerator with Thru-the-Door Ice and Water'] - nextPig['weight as a ratio of hog to LG - 24.7 Cu. Ft. French Door Refrigerator with Thru-the-Door Ice and Water']
     })
-
     this.props.changePigs(newPigs)
   }
 

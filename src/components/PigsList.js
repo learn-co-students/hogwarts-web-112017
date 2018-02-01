@@ -9,7 +9,9 @@ const PigsList = (props) => {
   }
 
   return(
-    <ul>{displayPigs()}</ul>
+    <div>
+      <ul>{displayPigs()}</ul>
+    </div>
   )
 }
 

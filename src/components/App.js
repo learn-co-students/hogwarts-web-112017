@@ -23,7 +23,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state)
     return (
       <div className="App">
         <Nav pigs={this.state.pigs} changeSort={this.changeSort} changeFilter={this.changeFilter} changePigs={this.changePigs}/>
