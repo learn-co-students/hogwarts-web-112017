@@ -57,7 +57,7 @@ filterHogsByGreased = (v, sortedHogList) => {
 
 render (){
   return (
-    <div>
+    <div id="HogContainer">
     <FilterSort setGreasedOnly={this.setGreasedOnly} setSortedBy={this.setSortedBy}/>
     <HogList hogs={ this.filterHogsByGreased(this.state.greasedOnly, this.sortHogList()) }  />
     </div>

@@ -29,16 +29,17 @@ handleSortedBy = (e) => {
 
 render () {
   return (
-    <div>
+    <div id="FilterSort">
      <label>Greased Hogs Only: </label>
     <input
         type="checkbox"
         checked={this.state.checkedGreasedOnly}
         onChange={this.handleGreasedOnly}
+        id="Filter"
       />
      <br/>
      <label>Sort By: </label>
-      <select onChange={this.handleSortedBy}>
+      <select onChange={this.handleSortedBy} id="Sort">
          <option value="name">Name</option>
          <option value="weight as a ratio of hog to LG - 24.7 Cu. Ft. French Door Refrigerator with Thru-the-Door Ice and Water">Weight</option>
       </select>

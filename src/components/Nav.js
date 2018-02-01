@@ -1,14 +1,11 @@
-import piggy from '../porco.png';
 import React from 'react';
 
 const Nav = () => {
   return (
-    <div className="navWrapper">
-      <span className="headerText">Hogwarts</span>
-      <div className="TwirlyPig">
-        <img src={piggy} className="App-logo" alt="piggy" />
-      </div>
-      <span className="normalText">A React App for County Fair Hog Fans</span>
+    <div id="Nav">
+      <h1 id="NavName">Hogwarts</h1>
+      <img src='https://cdn.iconscout.com/public/images/icon/free/png-512/pig-face-sus-wild-animal-food-3088363eeae1bedf-512x512.png' id="NavLogo" alt="piggy" />
+      <br /><div id="NavText">A React App for County Fair Hog Fans</div>
     </div>
   )
 }

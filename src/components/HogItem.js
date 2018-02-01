@@ -23,8 +23,8 @@ onInfoClick = () => {
  render() {
 
   return (
-    <div>
-       <img src={ this.getImage() } alt={this.props.hog.name}/>
+    <div className="HogItem">
+       <img src={ this.getImage() } alt={this.props.hog.name} className="HogImage"/>
         <h2>{this.props.hog.name}</h2>
        <div onClick={this.onInfoClick} style={this.state.displayHogInfo ? {display: "block"} : {display: "none"}} >
               <p>Specialty: {this.props.hog.specialty} <br />
