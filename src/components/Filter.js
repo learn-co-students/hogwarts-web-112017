@@ -9,7 +9,7 @@ class Filter extends React.Component {
     return (
       <div>
         <label for="greasy">Greasy?
-          <input type="checkbox" value="greasy" id="greasy"></input>
+          <input type="checkbox" value="greasy" id="greasy" onChange={this.props.handleGreaseSelection}></input>
         </label>
         <select>
           <option disabled selected value>Sort By:</option>

@@ -12,16 +12,33 @@ class App extends Component {
 
     this.state = {
       filter: "",
-      greasy: false
+      greasy: false,
+      currentHogs: hogs
     }
   }
 
-  handleGreaseSelection() {
-
+  handleGreaseSelection = () => {
+    let greaseStatus = !this.state.greasy
+    this.setState({
+      greasy: greaseStatus
+    }, this.handleRenderHog())
   }
 
+  handleRenderHog() {
+    let hogArray = hogs
+
+    if (!this.state.greasy) {
+      hogArray = hogArray.filter((h) => h.greased)
+    }
+    this.setState({
+      currentHogs: hogArray
+    })
+    console.log(hogArray.length)
+  }
+
+
   handleFilterChange() {
-    
+
   }
 
 
@@ -29,8 +46,8 @@ class App extends Component {
     return (
       <div className="App">
         < Nav />
-        < Filter />
-        < HogContainer hogs={hogs}/>
+        < Filter handleGreaseSelection = {this.handleGreaseSelection}/>
+        < HogContainer hogs={this.state.currentHogs}/>
       </div>
     )
   }

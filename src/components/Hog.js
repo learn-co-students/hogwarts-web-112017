@@ -15,7 +15,7 @@ class Hog extends React.Component {
       return (
         <ul>
           <li>Specialty: { this.props.hog.specialty}</li>
-          <li>Greased: { this.props.hog.greased}</li>
+          <li>Greased: { this.props.hog.greased ? "true" : "false"}</li>
           <li>Weight: { this.props.hog['weight as a ratio of hog to LG - 24.7 Cu. Ft. French Door Refrigerator with Thru-the-Door Ice and Water']}</li>
           <li>Medal: { this.props.hog[`highest medal achieved`]}</li>
         </ul>
